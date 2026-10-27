@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K-녹조 원스톱 AX 서비스 시연</title>
+<meta name="description" content="2026 대한민국 물산업 혁신 창업대전 출품작 시연 영상. 녹조누리 AI 녹조 탐지와 디지털 트윈 제거선 투입 시뮬레이션.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root {
+  --bg: #f6f7f9; --card: #ffffff; --ink: #141414; --ink2: #4a4f57; --mute: #8a9099;
+  --line: #e3e6ea; --accent: #1e3a8a; --accent2: #2b59c3; --green: #5b7f2a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: Pretendard, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+header { background: var(--accent); color: #fff; padding: 56px 16px 48px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+header .kicker { font-size: 14px; opacity: .8; letter-spacing: .02em; }
+header h1 { margin: 10px 0 8px; font-size: clamp(28px, 4.4vw, 42px); line-height: 1.25; }
+header p { margin: 0; font-size: 17px; opacity: .92; }
+.flow { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; font-size: 14px; }
+.flow span { background: rgba(255,255,255,.14); border-radius: 999px; padding: 6px 12px; }
+main { padding: 36px 0 56px; }
+section.demo { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin-bottom: 28px; }
+.tag { display: inline-block; font-size: 13px; color: var(--accent2); font-weight: 600; margin-bottom: 6px; }
+h2 { margin: 0 0 6px; font-size: 24px; }
+.lead { color: var(--ink2); margin: 0 0 16px; }
+video { width: 100%; border-radius: 10px; background: #000; display: block; }
+.points { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 20px; margin: 18px 0 0; padding: 0; list-style: none; }
+.points li { border-left: 3px solid var(--line); padding: 2px 0 2px 12px; font-size: 15px; color: var(--ink2); }
+.points b { color: var(--ink); display: block; font-size: 15px; }
+.note { font-size: 14px; color: var(--ink2); background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; }
+.note h3 { margin: 0 0 8px; font-size: 16px; color: var(--ink); }
+.note ul { margin: 0; padding-left: 18px; }
+footer { color: var(--mute); font-size: 13px; padding: 0 0 40px; }
+.pending { aspect-ratio: 16/9; border-radius: 10px; background: #e9edf3; display: grid; place-items: center; color: var(--mute); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">2026 대한민국 물산업 혁신 창업대전 | K-녹조AX팀, 서울시립대학교</div>
+    <h1>K-녹조 원스톱 AX 서비스 시연</h1>
+    <p>드론 AI 탐지에서 자율주행 제거까지, 대청호 회남수역 2023-09-04 실제 촬영 자료로 시연한다.</p>
+    <div class="flow"><span>드론 다중분광 촬영</span><span>→ 녹조누리 AI 탐지 (7분 22초)</span><span>→ 디지털 트윈 투입 시뮬레이션</span><span>→ 자율 제거선, 관제</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="demo">
+    <div class="tag">1단계 | 구현 완료</div>
+    <h2>녹조누리: 드론 AI 녹조 탐지와 경보</h2>
+    <p class="lead">5밴드 다중분광 정사영상을 AI(4클래스 판정)로 판정해 녹조 등급 분포도, 경보, 대응 대상 구역을 만든다.</p>
+    <video controls preload="metadata" poster="media/nokjonuri_0904.jpg" src="media/nokjonuri_0904.mp4"></video>
+    <ul class="points">
+      <li><b>2023-09-04 06:13 촬영</b>짙음 이상 47.0 ha 중 심각 23.9 ha</li>
+      <li><b>녹조누리 경보 3단계</b>대응 대상 구역 우선순위 = 면적 × 짙기</li>
+      <li><b>드론 원본 층</b>실제 정사영상 위 AI 판정 비교</li>
+      <li><b>스컴 집적</b>수면 집적 14.8 ha</li>
+    </ul>
+  </section>
+
+  <section class="demo">
+    <div class="tag">2단계 | 가상 환경 구현</div>
+    <h2>디지털 트윈: 제거선 투입 전 시뮬레이션</h2>
+    <p class="lead">녹조누리 분포도에서 출발해 바람에 따른 녹조 이동을 계산하고, 투입 계획(척수, 출동 시각, 하역지)을 배를 띄우기 전에 비교한다.</p>
+    <!--TWIN_VIDEO-->
+    <div class="pending">영상 준비 중</div>
+    <!--/TWIN_VIDEO-->
+    <ul class="points">
+      <li><b>투입 계획 6개 비교</b>추천 2척 트윈: 보호 지점 노출 89.7%, 수거 2.44 ha</li>
+      <li><b>척수 × 출동 시각 9가지</b>60분 늦으면 척수와 관계없이 노출 98.7%</li>
+      <li><b>통신 두절 시험</b>대기 → 자율 복귀 → 트윈 임무 취소</li>
+      <li><b>녹조누리 경보 연동</b>대응 대상 구역과 경보 단계 실시간 표시</li>
+    </ul>
+  </section>
+
+  <div class="note">
+    <h3>실제 자료와 시뮬레이션</h3>
+    <ul>
+      <li>실제 자료: 2023-09-04 대청호 회남수역 드론 촬영과 녹조누리 AI 판정, ERA5 재분석 바람, Copernicus 표고, 브이월드(국토교통부) 항공사진.</li>
+      <li>시뮬레이션: 첫 분포도 이후의 녹조 이동, 드론 재촬영, 제거선과 센서, 통신 두절은 가상 환경 계산이다. 계류장, 보호 지점, 유인선 항로는 예시 위치다.</li>
+      <li>녹조누리 경보는 영상 기반 내부 경보이며 환경부 조류경보제를 대신하지 않는다.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="wrap">K-녹조AX팀 | 서울시립대학교 AI·SW융합교육원 | 드론 자료 제공: 한국수자원공사</footer>
+</body>
+</html>
